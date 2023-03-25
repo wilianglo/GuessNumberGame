@@ -20,6 +20,7 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.number').textContent = bingoNo;
       displayMessage('BINGO !!!');
       document.querySelector('body').style.backgroundColor = '#60b347';
+      document.querySelector('.number').style.width = '30rem';
       score += 5;
       hscore.push(Number(score));
       console.log(hscore);
@@ -59,6 +60,8 @@ document.querySelector('.again').addEventListener('click', function () {
   document.querySelector('body').style.backgroundColor = '#222';
   displayMessage('Start guessing...');
   document.querySelector('.score').textContent = score;
+  document.querySelector('.number').style.width = '15rem';
+  document.querySelector('.guess').value = '';
   // document.querySelector('.highscore').textContent = bingoNo;
 });
 // function guestNumber(nomerUndi) {
